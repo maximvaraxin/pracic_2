@@ -23,7 +23,7 @@ namespace App_6
 
             if(number >= 100 && number <= 999)
             {
-                result = (number % 100) / 10;;
+                result = (number % 100) / 10;
             }
             else
             {
