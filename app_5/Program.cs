@@ -6,16 +6,16 @@
  * 8,9 -> нет
  */
 
-namespace App_4
+namespace App_5
 {
     class Programm
     {
         static void Main(string[] args)
         {
-            Console.WriteLine($"Введите число: ");
+            Console.Write($"Введите число: ");
             double num_1 = Convert.ToDouble(Console.ReadLine());
 
-            Console.WriteLine($"Введите число: ");
+            Console.Write($"Введите число: ");
             double num_2 = Convert.ToDouble(Console.ReadLine());
 
             Console.WriteLine($"Является ли одно число квадратом другого: {Sqtr(num_1, num_2)} ");

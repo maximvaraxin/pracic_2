@@ -11,7 +11,7 @@ namespace App_4
     {
         static void Main(string[] args)
         {
-            Console.WriteLine($"Введите число: ");
+            Console.Write($"Введите число: ");
             double num = Convert.ToDouble(Console.ReadLine());
 
             Console.WriteLine($"Кратно ли число одновременно 7 и 23: {Multiple(num)} ");

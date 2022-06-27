@@ -1,4 +1,11 @@
-﻿//доделать после занятия(не успел без условия)
+﻿/*
+ * Напишите программу, выводит рандомное число и выводит максимальную цифру этого числа в интервале от 10 до 1000.
+ * (вроде как то так звучало). 
+ * Ну это от себя:  если не попадает в интервал вывести -1.
+ * 18 -> 8 
+ * 23 -> 3
+ * 161 -> 6
+ */
 
 
 namespace App_1
@@ -7,18 +14,13 @@ namespace App_1
     {
         static void Main(string[] args)
         {
-            //TestMethod($"Все работает");
             
-            int num = GetRandomNumber(10,30);
-            Console.WriteLine($"write rand: ");
-            Console.WriteLine(num);
-            Console.WriteLine($"write max: ");
-            Console.WriteLine(GetMaxDigit(num));
-        }
+            int num = GetRandomNumber(-8,-100);
 
-        static void TestMethod(string str)
-        {
-            Console.WriteLine(str);
+            Console.WriteLine($"write rand: {num} ");
+
+            Console.WriteLine($"write max: {GetMaxDigit(num)} ");
+
         }
 
         static int GetRandomNumber(int minBorder, int maxBorder)
@@ -43,6 +45,11 @@ namespace App_1
                     result = digitTwo;
                 }
             }
+            else
+            {
+                result = -1;
+            }
+
             return result;
         }
     }

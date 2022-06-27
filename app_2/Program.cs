@@ -11,17 +11,11 @@ namespace App_2
     {
         static void Main(string[] args)
         {
-            //TestMethod($"Все работает");
             int num = Rand();
             
             Console.Write($"rand: {num} \n");
             Console.WriteLine($"update rand: {DelNumber(num)}");
    
-        }
-
-        static void TestMethod(string str)
-        {
-            Console.WriteLine(str);
         }
 
         static int Rand()
