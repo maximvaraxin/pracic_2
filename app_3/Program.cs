@@ -5,14 +5,14 @@
  *      16, 4 -> кратно
  */
 
-namespace App_2
+namespace App_3
 {
     class Programm
     {
         static void Main(string[] args)
         {
             //TestMethod($"Все работает");
-            Console.WriteLine(Multiple( 4, 2 ));
+            Console.WriteLine(Multiple( 34, 5 ));
    
         }
 
@@ -21,9 +21,11 @@ namespace App_2
             Console.WriteLine(str);
         }
 
-        static string Multiple(int num_1, int num_2)
+        static string Multiple(double num_1, double num_2)
         {
-            string multiple = (num_1 % num_2 == 0) ? $"multiples" : $"remainder of division :  {num_1 % num_2}";
+            
+            string multiple = (num_1 % num_2 == 0) ? $"multiples" : $"remainder of division : { num_1 % num_2 }";
+            
             return multiple;
         }
     }
