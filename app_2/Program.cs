@@ -12,8 +12,10 @@ namespace App_2
         static void Main(string[] args)
         {
             //TestMethod($"Все работает");
+            int num = Rand();
             
-            DelNumber(Rand());
+            Console.Write($"rand: {num} \n");
+            Console.WriteLine($"update rand: {DelNumber(num)}");
    
         }
 
@@ -27,14 +29,14 @@ namespace App_2
            return new Random().Next(100,1000);
         }
 
-        static void DelNumber(int num)
+        static string DelNumber(int num)
         {   
             int numDel = (num % 100) / 10;
             
             int num1 = (num / 100) % 10;
             int num2 = num % 10;
 
-            Console.Write($"{num1}{num2}");
+            return $"{num1}{num2}";
         }
     }
 }
