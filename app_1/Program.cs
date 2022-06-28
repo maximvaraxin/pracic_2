@@ -1,5 +1,5 @@
 ﻿/*
- * Напишите программу, выводит рандомное число и выводит максимальную цифру этого числа в интервале от 10 до 1000.
+ * Напишите программу, выводит рандомное число и выводит максимальную цифру этого числа в интервале от 10 до 100.
  * (вроде как то так звучало). 
  * Ну это от себя:  если не попадает в интервал вывести -1.
  * 18 -> 8 
@@ -15,7 +15,7 @@ namespace App_1
         static void Main(string[] args)
         {
             
-            int num = GetRandomNumber(-8,-100);
+            int num = GetRandomNumber(-10,99);
 
             Console.WriteLine($"write rand: {num} ");
 
@@ -32,9 +32,9 @@ namespace App_1
         static int GetMaxDigit(int number)
         {   
             int result = 0;
-            number = Math.Abs(number);
+            int num = Math.Abs(number);
             
-            if(number > 10 && number < 100)
+            if(num > 10 && num < 100)
             {
                 int digitOne = number / 10;
                 int digitTwo = number % 10;
