@@ -23,7 +23,7 @@ namespace App_3
         static string Multiple(double num_1, double num_2)
         {
             
-            string multiple = (num_2 % num_1 == 0) ? $"multiples" : $"remainder of division : { num_2 % num_1 }";
+            string multiple = (num_1 % num_2 == 0) ? $"multiples" : $"remainder of division : { num_1 % num_2 }";
             
             return multiple;
         }
